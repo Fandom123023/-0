@@ -15,14 +15,19 @@ public class Main {
         double[] worldTwo = {1.57, 7.654, 9.986};
         System.out.println(Arrays.toString(worldTwo));
 
-        System.out.println("test2");
         String[] fruits = {"груша", "виноград", "Апельсин"};
         System.out.println(fruits[0]);
         System.out.println(fruits[2]);
 
+
+        System.out.println("test2");
+        System.out.println(Arrays.toString(world));
+        System.out.println(Arrays.toString(worldTwo));
+        System.out.println(Arrays.toString(fruits));
+
         System.out.println("test3");
-        for (int i = worldTwo.length - 1; i >= 0; i--) {
-            System.out.print(worldTwo[i] + ", ");
+        for (int i = world.length - 1; i >= 0; i--) {
+            System.out.print(world[i] + ", ");
         }
         System.out.println();
         for (int i = worldTwo.length - 1; i >= 0; i--) {
@@ -30,17 +35,17 @@ public class Main {
         }
         System.out.println();
         for (int i = fruits.length - 1; i >= 0; i--) {
-            System.out.print(fruits[i] + "; ");
+            System.out.print(fruits[i] + ", ");
         }
         System.out.println();
 
         System.out.println(" test4");
-        for (int i = 0; i < worldTwo.length; i++) {
-            if (worldTwo[i] % 2 != 0) {
-                worldTwo[i] += 1;
+        for (int i = 0; i < world.length; i++) {
+            if (world[i] % 2 != 0) {
+                world[i] += 1;
             }
         }
-        System.out.println(Arrays.toString(worldTwo));
+        System.out.println(Arrays.toString(world));
 
 
 
