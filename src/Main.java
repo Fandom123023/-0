@@ -2,36 +2,34 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-
         System.out.println("test1");
-        int[] world = new int[3];
-        world[0] = 1;
-        world[1] = 2;
-        world[2] = 3;
-        System.out.println(world[0]);
-        System.out.println(world[1]);
-        System.out.println(world[2]);
+        int[] numbers = new int[3];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
+        System.out.println(numbers[0]);
+        System.out.println(numbers[1]);
+        System.out.println(numbers[2]);
 
-        double[] worldTwo = {1.57, 7.654, 9.986};
-        System.out.println(Arrays.toString(worldTwo));
+        double[] fractionalNumbers = {1.57, 7.654, 9.986};
+        for (double fractionalNumber : fractionalNumbers) System.out.println(fractionalNumber);
 
-        String[] fruits = {"груша", "виноград", "Апельсин"};
+        String[] fruits = {"Яблоко", "Банан", "Апельсин"};
         System.out.println(fruits[0]);
         System.out.println(fruits[2]);
 
-
         System.out.println("test2");
-        System.out.println(Arrays.toString(world));
-        System.out.println(Arrays.toString(worldTwo));
+        System.out.println(Arrays.toString(numbers));
+        System.out.println(Arrays.toString(fractionalNumbers));
         System.out.println(Arrays.toString(fruits));
 
         System.out.println("test3");
-        for (int i = world.length - 1; i >= 0; i--) {
-            System.out.print(world[i] + ", ");
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            System.out.print(numbers[i] + ", ");
         }
         System.out.println();
-        for (int i = worldTwo.length - 1; i >= 0; i--) {
-            System.out.print(worldTwo [i] + ", ");
+        for (int i = fractionalNumbers.length - 1; i >= 0; i--) {
+            System.out.print(fractionalNumbers[i] + ", ");
         }
         System.out.println();
         for (int i = fruits.length - 1; i >= 0; i--) {
@@ -39,13 +37,14 @@ public class Main {
         }
         System.out.println();
 
-        System.out.println(" test4");
-        for (int i = 0; i < world.length; i++) {
-            if (world[i] % 2 != 0) {
-                world[i] += 1;
+
+        System.out.println("test4");
+        for (int i = 0; i <numbers.length; i++) {
+            if (numbers[i] % 2 != 0) {
+                numbers[i] += 1;
             }
         }
-        System.out.println(Arrays.toString(world));
+        System.out.println(Arrays.toString(numbers));
 
 
 
